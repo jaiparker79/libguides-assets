@@ -42,15 +42,15 @@ The script also checks for a file named cancelled.xlsx and uses any value in col
 
 Otherwise, for every URL in the list, the script will flag it as broken if:
 
-* the webserver returns a 300 - 399 redirect response AND the URL redirected to is a domain. This test picks up where a deep link to a page or file redirects to the homepage of an organisation
-* the webserver returns a "400 Bad Request" response
+* the webserver returns a 301 redirect response AND the URL redirected to is a domain. This test picks up where a deep link to a page or file redirects to the homepage of an organisation
 * the webserver returns a "404 Not Found" response
-* the webserver returns a 500 - 599 range server error response.
+* the webserver returns a "405 Method Not Allowed" response
+* the webserver returns a 500 server error response.
 * the hostname in the URL cannot be resolved (i.e. DNS error)
 * a connection timeout occurs (by default this is 90 seconds)
 * the connection terminates incorrectly
 
-Other error values (e.g. "401 Not authorised", "403 Forbidden") are _not_ flagged by this script.
+* Other error values (e.g. "401 Not authorised", "403 Forbidden") are _not_ flagged by this script.
 
 ### Output
 
@@ -59,4 +59,4 @@ and the result.
 
 Finally, it will produce a CSV file of the broken links, named `broken-links-assets_list.csv`
 
-This report file contains several columns, FILL THIS IN TOMORROW
+This report file contains several columns, but the key one is the LibGuides Asset ID
