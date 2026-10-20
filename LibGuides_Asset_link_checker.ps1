@@ -15,27 +15,25 @@ function Test-Url {
 
     # Check for specific URL patterns first
     if ($url -match "^https://web\.[a-z0-9]+\.ebscohost\.com") {
-        return "https://www.library.qut.edu.au/search/status/linking/#other"
+        return "https://libguides.library.qut.edu.au/databases/linking/ebsco"
     } elseif ($url -match "^https://www\.clickview\.net/videos/") {
-        return "https://www.library.qut.edu.au/search/status/linking/#other"
+        return "https://libguides.library.qut.edu.au/databases/linking/clickview"
     } elseif ($url -match "^https://launch\.clickview\.net") {
-        return "https://www.library.qut.edu.au/search/status/linking/#other"
+        return "https://libguides.library.qut.edu.au/databases/linking/clickview"
     } elseif ($url -match "^https://online\.clickview\.com\.au") {
-        return "https://www.library.qut.edu.au/search/status/linking/#other"
+        return "https://libguides.library.qut.edu.au/databases/linking/clickview"
     } elseif ($url -match "^https://edu\.digitaltheatreplus\.com") {
-        return "https://www.library.qut.edu.au/search/status/linking/digitaltheatre/"
+        return "https://libguides.library.qut.edu.au/databases/linking/dtplus"
     } elseif ($url -match "^https://learning\.oreilly\.com") {
-        return "https://www.library.qut.edu.au/search/status/linking/oreilly/"
+        return "https://libguides.library.qut.edu.au/databases/linking/oreilly"
     } elseif ($url -match "^https://anzlaw\.thomsonreuters\.com") {
-        return "https://www.library.qut.edu.au/search/status/linking/westlaw/"
-    } elseif ($url -match "^https://1\.next\.westlaw\.com") {
-        return "https://www.library.qut.edu.au/search/status/linking/westlaw/"
+        return "https://libguides.library.qut.edu.au/databases/linking/westlaw"
     } elseif ($url -match "^https://uk\.westlaw\.com") {
-        return "https://www.library.qut.edu.au/search/status/linking/westlaw/"
+        return "https://libguides.library.qut.edu.au/databases/linking/westlaw"
     } elseif ($url -match "^https://global-factiva-com\.eu1\.proxy\.openathens\.net") {
-        return "https://www.library.qut.edu.au/search/status/linking/factiva/"
+        return "https://libguides.library.qut.edu.au/databases/linking/factiva"
     } elseif ($url -match "^https://dj-factiva-com\.eu1\.proxy\.openathens\.net") {
-        return "https://www.library.qut.edu.au/search/status/linking/factiva/"
+        return "https://libguides.library.qut.edu.au/databases/linking/factiva"
     } elseif ($url -match "^https://qut\.eblib\.com") {
         return "EBL. Change URL to ProQuest Ebook Central"
     } elseif ($url -match "^https://qut\.eblib\.com\.au") {
@@ -47,7 +45,7 @@ function Test-Url {
     } elseif ($url -match "gateway\.library\.qut\.edu\.au") {
         return "EZproxy"
     } elseif ($url -match "storyboxhub\.com/stories.*") {
-        return "https://www.library.qut.edu.au/search/status/linking/storyboxhub/"
+        return "https://libguides.library.qut.edu.au/databases/linking/storybox"
     }
 
     # $maxRetries is now set based on user selection below
