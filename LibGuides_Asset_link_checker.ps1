@@ -173,7 +173,7 @@ if ($csvFiles.Length -eq 0) {
 
 Write-Host ""
 Write-Host "#######################################################################" -ForegroundColor DarkYellow
-Write-Host "LibGuides link checking script with cancellation checking (Version 1.0)" -ForegroundColor DarkYellow
+Write-Host "LibGuides link checking script with cancellation checking (Version 1.1)" -ForegroundColor DarkYellow
 Write-Host "#######################################################################" -ForegroundColor DarkYellow
 Write-Host ""
 
