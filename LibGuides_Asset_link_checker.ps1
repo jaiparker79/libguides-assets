@@ -1,4 +1,4 @@
-# Begin Talis Aspire link checking script
+# Begin LibGuides Assets link checking script
 
 function Test-Url {
     param (
@@ -268,4 +268,4 @@ try {
 # Keep the PowerShell window open
 Read-Host -Prompt "Press Enter to exit"
 
-# End Talis Aspire link checking script
+# End LibGuides Assets link checking script
